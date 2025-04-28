@@ -1,4 +1,6 @@
-This repository hosts my solutions to [the coding challenge for Avantos.ai.](https://fluttering-atmosphere-1b5.notion.site/Journey-Builder-React-Coding-Challenge-190d5fe264fa80cba39ec21afc6d42ec)
+# Journey Builder React Coding Challenge
+
+This repository hosts my solutions to [the Avantos.ai coding challenge.](https://fluttering-atmosphere-1b5.notion.site/Journey-Builder-React-Coding-Challenge-190d5fe264fa80cba39ec21afc6d42ec)
 
 Live deployment: https://derek-avantos-ai.vercel.app
 
@@ -7,7 +9,7 @@ Live deployment: https://derek-avantos-ai.vercel.app
 npm run dev
 ```
 
-## Built With
+## This Project Was Built With
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=ts,react,next,playwright)
 
 ## My POST Request Details
