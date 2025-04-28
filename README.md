@@ -1,10 +1,14 @@
 This repository hosts my solutions to [the coding challenge for Avantos.ai.](https://fluttering-atmosphere-1b5.notion.site/Journey-Builder-React-Coding-Challenge-190d5fe264fa80cba39ec21afc6d42ec)
 
+Live deployment: https://derek-avantos-ai.vercel.app
+
 ### To locally run this project:
 ```bash
-cd app
 npm run dev
 ```
+
+## Built With
+[![My Skills](https://skillicons.dev/icons?i=ts,react,next)](https://skillicons.dev)<img src="https://playwright.dev/img/playwright-logo.svg" height="48" width="48" style="background-color: #242938; border-radius: 12px; margin-left: 8px">
 
 ## My POST Request Details
 I made my cURL request at approximately 13:00 4/25/25, therefore **my deadline is 13:00 5/1/25.**
