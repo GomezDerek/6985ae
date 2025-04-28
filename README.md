@@ -8,7 +8,7 @@ npm run dev
 ```
 
 ## Built With
-[![My Skills](https://skillicons.dev/icons?i=ts,react,next)](https://skillicons.dev)<img src="https://playwright.dev/img/playwright-logo.svg" height="48" width="48" style="background-color: #242938; border-radius: 12px; margin-left: 8px">
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=ts,react,next,playwright)
 
 ## My POST Request Details
 I made my cURL request at approximately 13:00 4/25/25, therefore **my deadline is 13:00 5/1/25.**
