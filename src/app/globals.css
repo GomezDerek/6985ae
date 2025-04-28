@@ -1,3 +1,48 @@
+/** CUSTOM FONTS **/
+/* Manuka */
+@font-face {
+  font-family: Manuka;
+  src: url('/fonts/Manuka/Manuka-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Manuka;
+  src: url('/fonts/Manuka/Manuka-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Manuka;
+  src: url('/fonts/Manuka/Manuka-Ultra.otf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Manuka;
+  src: url('/fonts/Manuka/Manuka-Medium.woff2');
+  font-weight: 600;
+}
+
+/* Founders Grotesk */
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url('/fonts/FoundersGrotesk/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url('/fonts/FoundersGrotesk/FoundersGrotesk-Medium.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: FoundersGrotesk;
+  src: url('/fonts/FoundersGrotesk/FoundersGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -39,4 +84,29 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Typography */
+h1 {
+  font-family: Manuka, sans-serif;
+}
+
+h2, h3, h4, p {
+  font-family: FoundersGrotesk, sans-serif;
+}
+
+p {
+  font-size: 1.15rem;
+}
+
+#header-logo {
+  font-family: Manuka, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
 }
