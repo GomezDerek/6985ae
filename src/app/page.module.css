@@ -8,13 +8,22 @@
 
   display: grid;
   grid-template-rows: 20px 1fr 20px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   align-items: center;
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
+  /* border: 2px solid limegreen; */
 }
+
+/* .page > * {
+  border: 2px solid cyan;
+} */
 
 @media (prefers-color-scheme: dark) {
   .page {
@@ -28,10 +37,12 @@
 }
 
 .main {
+  grid-area: main;
   display: flex;
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  border: 1px solid limegreen;
 }
 
 .main ol {
@@ -93,6 +104,7 @@ a.secondary {
 }
 
 .footer {
+  grid-area: footer;
   grid-row-start: 3;
   display: flex;
   gap: 24px;
