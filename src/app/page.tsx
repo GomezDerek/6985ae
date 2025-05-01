@@ -1,5 +1,5 @@
 // TODO: debug the nodes so that they are draggable 😭
-// TODO: put ReactFlow in a separate component/file
+// TODO: put ReactFlow in a separate component/file (components/features/ReactFlow.tsx)
 // TODO: put this app into light mode lol
 'use client';
 
@@ -55,9 +55,8 @@ export default function Home() {
         <p>AI that empowers your team to deliver services that boost loyalty and revenue</p>
         
         {/* this is where the magic happens */}
-        <div style={{ width: '80vh', height: '80vw', border: "1px solid red"}}>
+        <div id="flow-container">
           <ReactFlow
-            colorMode="dark"
             nodes={initialNodes} 
             edges={initialEdges}
             onNodesChange={onNodesChange}
