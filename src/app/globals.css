@@ -47,6 +47,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --secondary: #6b6b6b;
+  --foreground-light: #aaaaaa;
 }
 
 /* NO DARK MODE */
@@ -109,9 +110,12 @@ header {
   grid-area: header;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 2rem;
   align-items: flex-end;
+  margin-top: 0;
+  padding-top: 0;
+  /* border-bottom: 3px solid var(--foreground-light); */
 }
 
 header > #slogan {
@@ -161,4 +165,5 @@ button#sidebar-toggle {
   cursor: pointer;
   color: var(--foreground);
   padding: 0.2rem 0.5rem;
+  margin-bottom: 0.2rem;
 }

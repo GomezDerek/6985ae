@@ -9,15 +9,18 @@ import {
   MiniMap,
   Controls,
   Background,
+  BackgroundVariant,
 } from "@xyflow/react";
-
 import '@xyflow/react/dist/style.css';
 
-// Node type alias
+import TextUpdaterNode from "@/components/ui/TextUpdaterNode";
+
+// Type alias for Node objects
 type Node = {
     id: string;
     position: { x: number; y: number };
     data: { label: string };
+    type?: string; // Optional type property for custom node types
 };
 
 // Type alias for Edge objects
@@ -29,9 +32,16 @@ type Edge = {
   type?: string;
 };
 
+// custom nodes to be used in the flow
+const nodeTypes = {
+  textUpdater: TextUpdaterNode
+};
+
+
 const initialNodes: Node[] = [
-  { id: '1', position: { x: 0, y: 0 }, data: { label: '1' } },
+  { id: '1', position: { x: 0, y: 0 }, data: { label: '1' }, type: 'textUpdater' },
   { id: '2', position: { x: 100, y: 100 }, data: { label: '2' } },
+
 ];
 
 // const initialEdges = [{ id: '1-2', source: '1', target: '2', label: 'step edge', type: 'step' }];
@@ -59,16 +69,17 @@ export default function MainFlow() {
   return (
     <div id="flow-container">
       <ReactFlow
-        nodes={nodes} 
+        nodes={nodes}
         edges={edges}
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
+        nodeTypes={nodeTypes}
         fitView
       >
         <Controls />
         <MiniMap />
-        <Background gap={12} size={1}/>
+        <Background gap={12} size={6} variant={BackgroundVariant.Cross}/>
       </ReactFlow>
     </div>
   );

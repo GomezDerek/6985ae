@@ -7,7 +7,7 @@ import Sidebar from "@/components/features/Sidebar";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
