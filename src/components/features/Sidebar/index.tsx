@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export default function Sidebar() {
+interface SidebarProps {
+  isOpen: boolean;
+}
+
+export default function Sidebar({ isOpen }: SidebarProps) {
   return (
-    <div id="sidebar">Sidebar</div>
-  )
+    <div id="sidebar" className={isOpen ? "open" : ""}>
+      Sidebar
+    </div>
+  );
 }
