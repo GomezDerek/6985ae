@@ -4,6 +4,8 @@ This repository hosts my solutions to [the Avantos.ai coding challenge.](https:/
 
 Live deployment: https://derek-avantos-ai.vercel.app
 
+My screen recording: https://youtu.be/7IQXO5CxFW8
+
 ### To locally run this project:
 ```bash
 npm run dev
